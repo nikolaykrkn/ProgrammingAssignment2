@@ -42,7 +42,7 @@ cacheSolve <- function(x, ...) {
                 message("getting cached data")
                 return(i)
         }
-        ## otherwise, subsetting x to run the next steps
+        ## otherwise doing next steps to solve, cache and print the inverse:
         data <- x$get()
         i <- solve(data, ...)
         x$setinv(i)
